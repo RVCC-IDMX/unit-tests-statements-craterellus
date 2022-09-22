@@ -13,7 +13,8 @@
  * @returns {integer} - the next integer as if you were counting up by 1
  */
 function nextInteger(int) {
-  // write your code here & return value
+  const add = int + 1;
+  return add;
 }
 /**
  * Calculates the product of two numbers
@@ -22,7 +23,8 @@ function nextInteger(int) {
  * @returns {number} - The result of the multiplication
  */
 function times(a, b) {
-  // write your code here & return value
+  const result = a * b;
+  return (result);
 }
 
 /**
@@ -31,7 +33,8 @@ function times(a, b) {
  * @returns {number} - the number of seconds
  */
 function convertMinutesToSeconds(minutes) {
-  // write your code here & return value
+  const seconds = minutes * 60;
+  return (seconds);
 }
 
 /**
@@ -40,7 +43,8 @@ function convertMinutesToSeconds(minutes) {
  * @returns {number} - the number of seconds
  */
 function convertHoursToSeconds(hours) {
-  // write your code here & return value
+  const seconds = hours * 3600;
+  return (seconds);
 }
 
 module.exports = {

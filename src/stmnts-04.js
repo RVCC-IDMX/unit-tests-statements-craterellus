@@ -12,7 +12,9 @@
  * @returns {number} - temperature in Celsius
  */
 function fahrenheitToCelsius(fahrenheit) {
-  // write your code here & return
+  const celsiusCalc = ((fahrenheit - 32) * (5 / 9));
+  const celsRound = celsiusCalc.toFixed(2);
+  return celsRound;
 }
 
 /**
@@ -21,7 +23,10 @@ function fahrenheitToCelsius(fahrenheit) {
  * @returns {number} - temperature in Fahrenheit
  */
 function celsiusToFahrenheit(celsius) {
-  // write your code here & return
+  const fahrenheitCalc = (celsius * (9 / 5)) + 32;
+  const fahrenheitRound = fahrenheitCalc.toFixed();
+  const fahrenheitRound1 = fahrenheitRound.toString();
+  return fahrenheitRound1;
 }
 
 module.exports = {

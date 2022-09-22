@@ -13,6 +13,13 @@
  */
 function isOdd(num) {
   // write your code here & return
+  /** if ((num % 2) > 0) {
+    isOdd = true;
+  }
+  else if ((num % 2) = 0) {
+    isOdd = false;
+  }
+  */
 }
 
 /**
