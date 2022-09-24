@@ -14,7 +14,8 @@
 function fahrenheitToCelsius(fahrenheit) {
   const celsiusCalc = ((fahrenheit - 32) * (5 / 9));
   const celsRound = celsiusCalc.toFixed(2);
-  return celsRound;
+  const celsFinal = Number(celsRound);
+  return celsFinal;
 }
 
 /**
@@ -24,9 +25,9 @@ function fahrenheitToCelsius(fahrenheit) {
  */
 function celsiusToFahrenheit(celsius) {
   const fahrenheitCalc = (celsius * (9 / 5)) + 32;
-  const fahrenheitRound = fahrenheitCalc.toFixed();
-  const fahrenheitRound1 = fahrenheitRound.toString();
-  return fahrenheitRound1;
+  const fahrenheitRound = fahrenheitCalc.toFixed(2);
+  const fahrenheitRoundSt = Number(fahrenheitRound);
+  return fahrenheitRoundSt;
 }
 
 module.exports = {

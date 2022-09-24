@@ -13,7 +13,10 @@
  * ? [JavaScript: The Definitive Guide, Chapter 4.10](https://bit.ly/39lbxnK)
  */
 function logicalAnd(a, b) {
-  // write your code here & return
+  if ((a == true) && (b == true)) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -23,7 +26,10 @@ function logicalAnd(a, b) {
  * @returns {boolean} - true if a or b is truthy, false if both are falsy
  */
 function logicalOr(a, b) {
-  // write your code here & return
+  if ((a === true) || (b === true)) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -32,7 +38,9 @@ function logicalOr(a, b) {
  * @returns {boolean} - the opposite of the given boolean
  */
 function invertBoolean(bool) {
-  // write your code here & return
+  const boolTwo = Boolean(bool);
+  const boolThree = !boolTwo;
+  return boolThree;
 }
 
 /**
@@ -49,7 +57,13 @@ function invertBoolean(bool) {
  * ? [JavaScript: The Definitive Guide, Chapter 5.4.3](https://bit.ly/39hrIlW)
  */
 function numberOfOdds(num) {
-  // write your code here & return
+  let cookies = 1;
+  for (let count = 0; num; count += 1) {
+    if ((count % 2) > 0) {
+      cookies += 1;
+    }
+  }
+  return cookies;
 }
 
 /**
@@ -97,7 +111,7 @@ function gradeGenerator(score) {
  * ? return a string written like:
  * ? Francine got an A
  * ? David got a B
- * ? note: you have to use English grammar's correct indefinite article 
+ * ? note: you have to use English grammar's correct indefinite article
  * ? it's 'an A' (not a A) and 'an F' (not a F)
  */
 function getGrade(name, score) {
