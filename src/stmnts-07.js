@@ -13,7 +13,7 @@
  * ? [JavaScript: The Definitive Guide, Chapter 4.10](https://bit.ly/39lbxnK)
  */
 function logicalAnd(a, b) {
-  if ((a == true) && (b == true)) {
+  if ((a === true) && (b === true)) {
     return true;
   }
   return false;
@@ -57,8 +57,8 @@ function invertBoolean(bool) {
  * ? [JavaScript: The Definitive Guide, Chapter 5.4.3](https://bit.ly/39hrIlW)
  */
 function numberOfOdds(num) {
-  let cookies = 1;
-  for (let count = 0; num; count += 1) {
+  let cookies = 0;
+  for (let count = 0; count < num; count += 1) {
     if ((count % 2) > 0) {
       cookies += 1;
     }
@@ -76,7 +76,11 @@ function numberOfOdds(num) {
  * ? For example, num is 4 then return 10 because 1 + 2 + 3 + 4 = 10.
  */
 function addUpTheNumbers(num) {
-  // write your code here & return
+  let cookies = 0;
+  for (let count = 0; count <= num; count += 1) {
+    cookies += count;
+  }
+  return cookies;
 }
 
 /**
@@ -95,7 +99,23 @@ function addUpTheNumbers(num) {
  * ?
  */
 function gradeGenerator(score) {
-  // write your code here & return
+  let grade;
+  if (score < 60) {
+    grade = 'F'
+  }
+  else if (score < 70) {
+    grade = 'D'
+  }
+  else if (score < 80) {
+    grade = 'C'
+  }
+  else if (score < 90) {
+    grade = 'B'
+  }
+  else if (score <= 100) {
+    grade = 'A'
+  }
+  return grade;
 }
 
 /**
@@ -115,7 +135,13 @@ function gradeGenerator(score) {
  * ? it's 'an A' (not a A) and 'an F' (not a F)
  */
 function getGrade(name, score) {
-  // write your code here & return
+  const grade = gradeGenerator(score);
+  const anGrade = `${name} got an ${grade}`;
+  const aGrade = `${name} got a ${grade}`;
+  if ((grade === 'F') || (grade === 'A')) {
+    return anGrade;
+  }
+  return aGrade;
 }
 
 module.exports = {
