@@ -45,7 +45,7 @@ function rectangleArea(width, height) {
 function circleCircumference(radius) {
   const circ = ((radius * 2) * Math.PI);
   const circRound = circ.toFixed(2);
-  return circRound;
+  return +circRound;
 }
 
 /**
@@ -57,7 +57,7 @@ function circleCircumference(radius) {
 function circleArea(radius) {
   const circArea = Math.PI * (radius ** 2);
   const circAreaRound = circArea.toFixed(2);
-  return circAreaRound;
+  return +circAreaRound;
 }
 
 /**
@@ -71,7 +71,7 @@ function circleArea(radius) {
 function triangleArea(base, height) {
   const triArea = ((base * height) / 2);
   const triAreaRound = triArea.toFixed(2);
-  return triAreaRound;
+  return +triAreaRound;
 }
 
 /**
@@ -85,7 +85,7 @@ function pythagorean(sideA, sideB) {
   const cSquared = ((sideA ** 2) + (sideB ** 2));
   const pythag = cSquared ** 0.5;
   const pythagRound = pythag.toFixed(2);
-  return pythagRound;
+  return +pythagRound;
 }
 
 module.exports = {
